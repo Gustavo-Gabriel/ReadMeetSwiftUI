@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1874CBD25BCD5B5001526A1 /* MyClubsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1874CBC25BCD5B5001526A1 /* MyClubsView.swift */; };
 		F1FA76EF25B637650090ECDF /* ReadMeetSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA76EE25B637650090ECDF /* ReadMeetSwiftUIApp.swift */; };
 		F1FA76F125B637650090ECDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA76F025B637650090ECDF /* ContentView.swift */; };
 		F1FA76F325B637660090ECDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA76F225B637660090ECDF /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1874CBC25BCD5B5001526A1 /* MyClubsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClubsView.swift; sourceTree = "<group>"; };
 		F1FA76EB25B637650090ECDF /* ReadMeetSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMeetSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FA76EE25B637650090ECDF /* ReadMeetSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeetSwiftUIApp.swift; sourceTree = "<group>"; };
 		F1FA76F025B637650090ECDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				F1FA76EE25B637650090ECDF /* ReadMeetSwiftUIApp.swift */,
 				F1FA76F025B637650090ECDF /* ContentView.swift */,
+				F1874CBC25BCD5B5001526A1 /* MyClubsView.swift */,
 				F1FA76F225B637660090ECDF /* Assets.xcassets */,
 				F1FA76F725B637660090ECDF /* Info.plist */,
 				F1FA76F425B637660090ECDF /* Preview Content */,
@@ -140,6 +143,7 @@
 			files = (
 				F1FA76F125B637650090ECDF /* ContentView.swift in Sources */,
 				F1FA76EF25B637650090ECDF /* ReadMeetSwiftUIApp.swift in Sources */,
+				F1874CBD25BCD5B5001526A1 /* MyClubsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
