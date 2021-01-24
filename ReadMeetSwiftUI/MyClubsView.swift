@@ -10,15 +10,19 @@ import SwiftUI
 struct MyClubsView: View {
     
     let nameClub: String
+    let colorClub: UIColor
     
     var body: some View {
         HStack{
             ZStack{
-                Color(.red)
+                Color(colorClub)
                 
                 VStack{
                     HStack{
                         Text(nameClub)
+                            .font(.system(size: 15, weight: .bold, design: .default))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.leading)
                             .padding()
                         Spacer()
                     }
@@ -46,6 +50,6 @@ struct MyClubsView: View {
 
 struct MyClubsView_Previews: PreviewProvider {
     static var previews: some View {
-        MyClubsView(nameClub: "")
+        MyClubsView(nameClub: "", colorClub: UIColor(.red))
     }
 }

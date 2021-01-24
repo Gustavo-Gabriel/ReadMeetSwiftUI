@@ -13,25 +13,53 @@ struct ContentView: View {
         NavigationView{
             
             VStack{
-                HStack{
-                    Text("Meus Clubes")
-                        .padding()
-                    Spacer()
-                }
                 
                 ScrollView(.vertical, showsIndicators: false ){
+                    
+                    HStack{
+                        Text("Meus Clubes")
+                            .font(.system(size: 24, weight: .bold, design: .default))
+                            .padding()
+                        Spacer()
+                    }
+                    
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack(spacing: 15){
                             
-                            MyClubsView(nameClub: "Carry OnLovers")
-                            MyClubsView(nameClub: "Romance Readers")
-                            MyClubsView(nameClub: "Só Classicos Brasileiros")
+                            MyClubsView(nameClub: "Carry On Lovers", colorClub: firstColor)
+                            MyClubsView(nameClub: "Romance Readers", colorClub: secondColor)
+                            MyClubsView(nameClub: "Só Classi Brasileiros", colorClub: thirdColor)
+                            MyClubsView(nameClub: "Franz Kafka", colorClub: firstColor)
+                        }
+                        .padding(.vertical, 0.1)
+                        .padding(.horizontal)
+                        
+                    }
+                    
+                    HStack{
+                        Text("Minhas Listas")
+                            .font(.system(size: 24, weight: .bold, design: .default))
+                            .padding()
+                        
+                        Spacer()
+                    }
+                    
+                    ScrollView(.horizontal, showsIndicators: false){
+                        HStack(spacing: 10){
+                            
+                            MyListView(nameList: "Favoritos")
+                            MyListView(nameList: "Romances")
+                            MyListView(nameList: "LGBT")
+                            MyListView(nameList: "Nerd")
+                            
                         }
                         .padding(.vertical, 0.1)
                         .padding(.horizontal)
                         
                     }
                 }
+                
+                
                 
                 Spacer()
                 
