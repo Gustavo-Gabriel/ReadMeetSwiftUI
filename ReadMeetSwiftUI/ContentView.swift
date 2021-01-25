@@ -57,9 +57,24 @@ struct ContentView: View {
                         .padding(.horizontal)
                         
                     }
+                    
+                    HStack{
+                        Text("Novidades")
+                            .font(.system(size: 24, weight: .bold, design: .default))
+                            .padding()
+                        
+                        Spacer()
+                    }
+                    
+                    PostView(imageModel: "person1", nameModel: "Mark Zuckerberg", postModel: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim ad minim veniam.")
+                    
+                    PostView(imageModel: "person2", nameModel: "Jeff Bezos", postModel: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim ad minim veniam.")
+                    
+                    PostView(imageModel: "person3", nameModel: "Bill Gates", postModel: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim ad minim veniam.")
+                    
+                    
+                    
                 }
-                
-                
                 
                 Spacer()
                 
