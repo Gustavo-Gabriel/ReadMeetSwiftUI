@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var showingActionSheet = false
+    @State private var backgroundColor = Color.white
+    
     var body: some View {
+        
         NavigationView{
             
             VStack{
@@ -40,6 +45,7 @@ struct HomeView: View {
                             .font(.system(size: 24, weight: .bold, design: .default))
                             .padding()
                         
+                        
                         Spacer()
                     }
                     
@@ -70,9 +76,6 @@ struct HomeView: View {
                     PostView(imageModel: "person2", nameModel: "Jeff Bezos", postModel: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim ad minim veniam.")
                     
                     PostView(imageModel: "person3", nameModel: "Bill Gates", postModel: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim ad minim veniam.")
-                    
-                    
-                    
                 }
                 
                 Spacer()
@@ -87,6 +90,20 @@ struct HomeView: View {
                     .foregroundColor(.orange)
                     .frame(width: 44, height: 44, alignment: .center)
                     .aspectRatio(contentMode: .fill)
+                    .onTapGesture {
+                        self.showingActionSheet = true
+                    }
+                    .actionSheet(isPresented: $showingActionSheet) {
+                        
+                        
+                        ActionSheet(title: Text(""), buttons: [
+                            .default(Text("Escrever Resenha")) {},
+                            .default(Text("Fazer Upload de Vídeo")) {},
+                            .default(Text("Criar Lista de Leitura")) {},
+                            .default(Text("Criar Clube de Leitura")) {},
+                            .cancel(Text("Cancelar"))
+                        ])
+                    }
             }))
             
         }
