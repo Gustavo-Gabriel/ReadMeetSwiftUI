@@ -14,34 +14,37 @@ struct MyClubsView: View {
     
     var body: some View {
         HStack{
-            ZStack{
-                Color(colorClub)
-                
-                VStack{
-                    HStack{
-                        Text(nameClub)
-                            .font(.system(size: 15, weight: .bold, design: .default))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.leading)
-                            .padding()
-                        Spacer()
+            NavigationLink(destination: DetailsClubView(), label: {
+                ZStack{
+                    Color(colorClub)
+                    
+                    VStack{
+                        HStack{
+                            Text(nameClub)
+                                .font(.system(size: 15, weight: .bold, design: .default))
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.leading)
+                                .padding()
+                            Spacer()
+                        }
+                        
+                        HStack{
+                            Image(systemName: "heart")
+                                .frame(width: 13, height: 11, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .padding(.leading)
+                                .foregroundColor(.black)
+                            
+                            Text("30k")
+                                .font(.system(size: 10, weight: .regular, design: .default))
+                                .foregroundColor(.black)
+                            
+                            Spacer()
+                        }
                     }
                     
-                    HStack{
-                        Image(systemName: "heart")
-                            .frame(width: 13, height: 11, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            .padding(.leading)
-                        
-                        Text("30k")
-                            .font(.system(size: 10, weight: .regular, design: .default))
-                        
-                        
-                        Spacer()
-                    }
                 }
-
-            }
-         
+            })
+            
         }
         .frame(width: 119, height: 148, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         .cornerRadius(12)
