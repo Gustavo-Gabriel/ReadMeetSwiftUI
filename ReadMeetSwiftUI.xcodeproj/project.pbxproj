@@ -11,6 +11,7 @@
 		F1F7BA9725BE0A53005E1383 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7BA9625BE0A53005E1383 /* Colors.swift */; };
 		F1F7BA9B25BE11C0005E1383 /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7BA9A25BE11C0005E1383 /* MyListView.swift */; };
 		F1F7BA9E25BE4B73005E1383 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7BA9D25BE4B73005E1383 /* PostView.swift */; };
+		F1F7BAA125BE4F8E005E1383 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7BAA025BE4F8E005E1383 /* HomeView.swift */; };
 		F1FA76EF25B637650090ECDF /* ReadMeetSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA76EE25B637650090ECDF /* ReadMeetSwiftUIApp.swift */; };
 		F1FA76F125B637650090ECDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA76F025B637650090ECDF /* ContentView.swift */; };
 		F1FA76F325B637660090ECDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA76F225B637660090ECDF /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		F1F7BA9625BE0A53005E1383 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F1F7BA9A25BE11C0005E1383 /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
 		F1F7BA9D25BE4B73005E1383 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		F1F7BAA025BE4F8E005E1383 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F1FA76EB25B637650090ECDF /* ReadMeetSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMeetSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FA76EE25B637650090ECDF /* ReadMeetSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeetSwiftUIApp.swift; sourceTree = "<group>"; };
 		F1FA76F025B637650090ECDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				F1FA76F425B637660090ECDF /* Preview Content */,
 				F1F7BA9A25BE11C0005E1383 /* MyListView.swift */,
 				F1F7BA9D25BE4B73005E1383 /* PostView.swift */,
+				F1F7BAA025BE4F8E005E1383 /* HomeView.swift */,
 			);
 			path = ReadMeetSwiftUI;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FA76F125B637650090ECDF /* ContentView.swift in Sources */,
+				F1F7BAA125BE4F8E005E1383 /* HomeView.swift in Sources */,
 				F1F7BA9725BE0A53005E1383 /* Colors.swift in Sources */,
 				F1FA76EF25B637650090ECDF /* ReadMeetSwiftUIApp.swift in Sources */,
 				F1874CBD25BCD5B5001526A1 /* MyClubsView.swift in Sources */,
