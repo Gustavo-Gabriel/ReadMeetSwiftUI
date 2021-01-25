@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var showingActionSheet = false
-    @State private var backgroundColor = Color.white
     
     var body: some View {
         
